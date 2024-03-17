@@ -20,7 +20,7 @@ const AdminSidebar = () => {
   useEffect(() => {
     if(isLogout){
       navigate("/")
-      alert("Logout Successfully");
+      toast.success("Logout Successfully");
       dispatch(clearState());
     }
     if(error){
