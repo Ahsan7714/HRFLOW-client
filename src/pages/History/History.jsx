@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import { getAllAttendance } from "../../store/reducers/adminReducer";
 import Spinner from "../../components/spinner/Spinner";
 
+
 const History = () => {
   const dispatch = useDispatch();
   const { allAttendance, loading, error } = useSelector((state) => state.admin);
